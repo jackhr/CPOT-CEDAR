@@ -6,14 +6,14 @@
 }
 
 :root {
-    --primary              : #2e4398;
-    --primary-darker       : #233374;
-    --primary-rgb          : rgb(46, 67, 152);
-    --primary-rgb-vals     : 46, 67, 152;
-    --secondary            : #ed6f35;
-    --secondary-darker     : #da6732;
-    --secondary-rgb        : rgb(237, 111, 53);
-    --secondary-rgb-vals   : 237, 111, 53;
+    --primary              : #ed6f35;
+    --primary-darker       : #da6732;
+    --primary-rgb          : rgb(237, 111, 53);
+    --primary-rgb-vals     : 237, 111, 53;
+    --secondary            : #2e4398;
+    --secondary-darker     : #233374;
+    --secondary-rgb        : rgb(46, 67, 152);
+    --secondary-rgb-vals   : 46, 67, 152;
     --blue                 : #3a6ed3;
     --black                : #232628;
     --white                : #fff;
