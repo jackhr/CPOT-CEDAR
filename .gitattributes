@@ -1,0 +1,2 @@
+assets/icons/facebook.png filter=lfs diff=lfs merge=lfs -text
+assets/icons/right-arrow.svg filter=lfs diff=lfs merge=lfs -text
