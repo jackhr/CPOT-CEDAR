@@ -1,6 +1,6 @@
 <?php require_once __DIR__ . '/../includes/head.php'; ?>
 
-<body id="sconces">
+<body id="garden-and-gallery">
     <?php require_once __DIR__ . '/../includes/nav.php'; ?>
 
     <section class="header">
