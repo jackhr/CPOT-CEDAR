@@ -1,11 +1,3 @@
-<?php
-if (($current_url == '/sconces/') || ($current_url == '/sconces/shop.php')) {
-    $on_sconce_page = true;
-} else {
-    $on_sconce_page = false;
-}
-?>
-
 <footer>
 
     <section id="contact-banner"></section>
@@ -51,22 +43,25 @@ if (($current_url == '/sconces/') || ($current_url == '/sconces/shop.php')) {
                         <a href="/" class="<?php echo ($current_url == '/') ? 'current' : ''; ?>">Home</a>
                     </li>
                     <li>
-                        <a href="/sconces" class="<?php echo $on_sconce_page ? 'current' : ''; ?>">Sconces</a>
+                        <a href="/paint-a-pot" class="<?php echo ($current_url === '/paint-a-pot/') ? 'current' : ''; ?>">Paint A Pot</a>
                     </li>
                     <li>
-                        <a href="/portfolios/imogen" class="<?php echo strpos($current_url, '/portfolios/imogen/') !== false ? 'current' : ''; ?>">Imogen</a>
+                        <a href="/throwing" class="<?php echo ($current_url === '/throwing/') ? 'current' : ''; ?>">Throwing</a>
                     </li>
                     <li>
-                        <a href="/portfolios/michael" class="<?php echo strpos($current_url, '/portfolios/michael/') !== false ? 'current' : ''; ?>">Michael</a>
+                        <a href="/events" class="<?php echo ($current_url === '/events/') ? 'current' : ''; ?>">Events</a>
+                    </li>
+                    <li>
+                        <a href="/stays" class="<?php echo ($current_url === '/stays/') ? 'current' : ''; ?>">Stays</a>
+                    </li>
+                    <li>
+                        <a href="/garden-and-gallery" class="<?php echo ($current_url == '/garden-and-gallery/') ? 'current' : ''; ?>">Garden & Gallery</a>
                     </li>
                     <li>
                         <a href="/about" class="<?php echo ($current_url == '/about/') ? 'current' : ''; ?>">Our Story</a>
                     </li>
                     <li>
                         <a href="/contact" class="<?php echo ($current_url == '/contact/') ? 'current' : ''; ?>">Contact</a>
-                    </li>
-                    <li>
-                        <a href="/cart" class="<?php echo ($current_url == '/cart/') ? 'current' : ''; ?>">Cart</a>
                     </li>
                 </ul>
             </div>
