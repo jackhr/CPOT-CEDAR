@@ -499,6 +499,67 @@ section.catalogue-section div.inner {
     margin   : auto;
 }
 
+#steps div.inner {
+    display       : flex;
+    flex-direction: column;
+    padding       : calc(var(--general-padding) * 8) calc(var(--general-padding) * 4);
+}
+
+#steps div.step {
+    display        : flex;
+    align-items    : center;
+    width          : 75%;
+    gap            : 24px;
+    justify-content: flex-end;
+    background     : var(--secondary);
+    padding        : 0 0 0 12px;
+    color          : var(--white);
+}
+
+#steps div.step:nth-child(2n+1) {
+    flex-direction: row-reverse;
+    background    : var(--primary);
+    padding       : 0 12px 0 0;
+    color         : var(--black);
+}
+
+#steps div.step div:first-child {
+    width        : 60%;
+    padding-right: 24px;
+}
+
+#steps div.step div:first-child h2 {
+    margin     : 0 0 24px;
+    font-size  : 32px;
+    font-weight: 400;
+}
+
+#steps div.step div:first-child p {
+    margin     : 0;
+    font-size  : 18px;
+    line-height: 1.67;
+}
+
+#steps div.step:nth-child(2n+1) div:first-child {
+    padding-left: 24px;
+}
+
+#steps div.step div:last-child {
+    width     : 30%;
+    position  : relative;
+    transform : scale(1.15);
+    background: var(--primary);
+}
+
+#steps div.step:nth-child(2n+1) div:last-child {
+    background: var(--secondary);
+}
+
+#steps div.step div:last-child img {
+    width : 100%;
+    height: auto;
+}
+
 .gallery {
     display        : flex;
     gap            : 24px;
