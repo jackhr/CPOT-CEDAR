@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $company_name; ?></title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/flatpickr-override.css">
 
     <!-- favicon begin -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">

@@ -112,6 +112,58 @@
         </div>
     </section>
 
+    <section class="modal paint-a-pot" data-step="1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="left">
+                        <h3>Paint A Pot</h3>
+                        <div id="cal"></div>
+                    </div>
+                    <div class="right">
+                        <!-- <p>Click on a date to book your spot. You will be redirected to our booking page to complete your reservation.</p> -->
+                        <p>What time would you like to attend?</p>
+                        <div id="pap-time-slots">
+                            <!-- Below are placeholders for testing at the moment -->
+                            <!-- We will render actual times with JS eventually -->
+                            <div class="time-slot">
+                                <button class="secondary">10:00 - 12:00</button>
+                                <span>12 available spots</span>
+                            </div>
+                            <div class="time-slot">
+                                <button class="secondary">14:00 - 16:00</button>
+                                <span>8 available spots</span>
+                            </div>
+                        </div>
+                        <span>Don’t see any times that work for you?<br>If you have a group of 8 or more people get in contact and we can arrange a<br>private Paint A Pot session on a date that suites you better.</span>
+                        <a href="/contact/index.php" class="continue-btn">Make an enquiry</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
+<script>
+    $("#cal").flatpickr({
+        inline: true,
+        minDate: "today",
+        dateFormat: "Y-m-d",
+        disableMobile: "true",
+        onChange: function(selectedDates, dateStr, instance) {
+            // update state
+        }
+    });
+
+    $(".enquiry-btn").on("click", function() {
+        $(".modal.paint-a-pot").addClass("showing");
+    });
+
+    $(".time-slot button").on("click", function() {
+        $(".time-slot button").removeClass("selected");
+        $(this).addClass("selected");
+    });
+</script>
 
 <?php require_once __DIR__ . '/../includes/footer.php'; ?>

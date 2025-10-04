@@ -24,6 +24,7 @@
     --grey-x-light         : #cdcdcd;
     --grey-light           : #888888;
     --grey-dark            : #676767;
+    --grey-marg-hunt       : #b4b4b4;
     --red                  : #ea0c0c;
     --red-darker           : #d10b0b;
     --primary-unsaturated  : #d1d7e1;
@@ -205,6 +206,12 @@ button:active,
 a.continue-btn:active,
 a[download]:active {
     background-color: var(--secondary-darker);
+}
+
+button.secondary {
+    background  : var(--white);
+    border-color: var(--primary);
+    color       : var(--primary);
 }
 
 button.load-more-btn {
@@ -1049,6 +1056,110 @@ html:has(.modal.showing) {
     gap            : 12px;
 }
 
+.modal.paint-a-pot .modal-content {
+    border-radius: 0;
+}
+
+.modal.paint-a-pot .modal-body h3 {
+    font-weight   : 400;
+    font-size     : 24px;
+    line-height   : 34px;
+    letter-spacing: 0px;
+    margin        : 0 0 12px;
+}
+
+.modal.paint-a-pot[data-step="1"] .modal-content {
+    border : none;
+    padding: 0;
+    width  : auto;
+}
+
+.modal.paint-a-pot[data-step="1"] .modal-body {
+    padding   : 0;
+    display   : flex;
+    text-align: center;
+    height    : 550px;
+}
+
+.modal.paint-a-pot[data-step="1"] .modal-body div.left {
+    width           : 100%;
+    max-width       : 350px;
+    padding         : 24px 12px;
+    background-color: #EDEDED;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+}
+
+.modal.paint-a-pot[data-step="1"] .modal-body div.right {
+    background    : var(--grey-marg-hunt);
+    width         : 500px;
+    padding       : 24px 12px;
+    color         : var(--white);
+    display       : flex;
+    flex-direction: column;
+}
+
+.modal.paint-a-pot[data-step="1"] .modal-body div.right>p {
+    font-size     : 18px;
+    line-height   : 28px;
+    letter-spacing: 0;
+    margin        : 0 0 24px;
+}
+
+#pap-time-slots {
+    display       : flex;
+    flex-direction: column;
+    gap           : 12px;
+    align-items   : center;
+    height        : 100%;
+    overflow-y    : auto;
+    margin-bottom : 12px;
+}
+
+.time-slot {
+    display    : flex;
+    gap        : 8px;
+    align-items: center;
+}
+
+.time-slot button {
+    border-radius: 16px;
+}
+
+.time-slot button:hover,
+.time-slot button.selected {
+    border-color: var(--white);
+    color       : var(--white);
+}
+
+.time-slot button:hover {
+    background: var(--primary);
+}
+
+.time-slot button.selected {
+    background: var(--secondary);
+}
+
+.time-slot button:active {
+    background-color: var(--primary-darker);
+}
+
+#pap-time-slots+span {
+    font-size     : 12px;
+    line-height   : 22px;
+    letter-spacing: 0;
+    margin-bottom : 24px;
+}
+
+.modal.paint-a-pot[data-step="1"] .modal-body div.right>a.continue-btn {
+    max-width       : 290px;
+    background-color: var(--primary);
+    margin          : auto;
+    width           : 100%;
+    border-radius   : 16px;
+}
+
 #item-modal .info-container {
     display       : flex;
     flex-direction: column;
@@ -1190,7 +1301,7 @@ html:has(.modal.showing) {
 }
 
 .info-container .info-section:first-child p {
-    color      : #B4B4B4;
+    color      : var(--grey-marg-hunt);
     font-weight: 500;
     line-height: 26px;
     margin     : 0;

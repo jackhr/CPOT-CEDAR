@@ -1,0 +1,33 @@
+.flatpickr-calendar {
+    box-shadow: none !important;
+    background: none !important;
+}
+
+
+.flatpickr-months .flatpickr-prev-month svg,
+.flatpickr-months .flatpickr-next-month svg {
+    stroke-width: 3px;
+}
+
+.flatpickr-months .flatpickr-prev-month:hover svg,
+.flatpickr-months .flatpickr-next-month:hover svg {
+    fill: var(--secondary) !important;
+}
+
+.flatpickr-months {
+    margin-bottom: 24px;
+}
+
+span.flatpickr-weekday {
+    font-weight   : 600 !important;
+    text-transform: uppercase !important;
+}
+
+.flatpickr-day:not(.flatpickr-disabled) {
+    color: var(--secondary) !important;
+}
+
+.flatpickr-day.selected {
+    background  : var(--white) !important;
+    border-color: var(--primary) !important;
+}
