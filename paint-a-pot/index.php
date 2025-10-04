@@ -115,6 +115,13 @@
     <section class="modal paint-a-pot" data-step="1">
         <div class="modal-dialog">
             <div class="modal-content">
+                <div class="modal-options">
+                    <span class="modal-close">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.24264 0.758266C8.85212 0.367741 8.21895 0.367741 7.82843 0.758265L5 3.58669L2.17157 0.758266C1.78105 0.367741 1.14788 0.367741 0.757359 0.758266C0.366835 1.14879 0.366835 1.78195 0.757359 2.17248L3.58579 5.00091L0.757359 7.82933C0.366835 8.21986 0.366835 8.85302 0.757359 9.24355C1.14788 9.63407 1.78105 9.63407 2.17157 9.24355L5 6.41512L7.82843 9.24355C8.21895 9.63407 8.85212 9.63407 9.24264 9.24355C9.63316 8.85302 9.63317 8.21986 9.24264 7.82933L6.41421 5.00091L9.24264 2.17248C9.63316 1.78195 9.63316 1.14879 9.24264 0.758266Z" fill="black" />
+                        </svg>
+                    </span>
+                </div>
                 <div class="modal-body">
                     <div class="left">
                         <h3>Paint A Pot</h3>
@@ -143,9 +150,63 @@
         </div>
     </section>
 
+    <section class="modal paint-a-pot" data-step="2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-options">
+                    <span class="modal-back" onclick="goToModal(1);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8421 7.34288C12.1771 7.72715 12.166 8.29495 11.8349 8.66548L11.7454 8.75378L9.1681 11H17.5001C18.0524 11 18.5001 11.4477 18.5001 12C18.5001 12.5129 18.1141 12.9355 17.6167 12.9933L17.5001 13H9.1691L11.7454 15.2462C12.1617 15.6092 12.205 16.2409 11.8421 16.6572C11.5071 17.0414 10.943 17.1078 10.5308 16.8303L10.4312 16.7538L5.82016 12.7334L5.74633 12.6572L5.70445 12.6058L5.64777 12.5233L5.59195 12.4193L5.55287 12.3214L5.52669 12.2294L5.50617 12.1108L5.50098 11.9573C5.50365 11.8938 5.51235 11.8305 5.52714 11.7682L5.55956 11.6595L5.59499 11.5743L5.6465 11.4788L5.6898 11.4136L5.76701 11.3199L5.84296 11.2462L10.4312 7.24624C10.8475 6.88332 11.4791 6.92658 11.8421 7.34288Z" fill="black" />
+                        </svg>
+                        <span>Back</span>
+                    </span>
+                    <span class="modal-close">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.24264 0.758266C8.85212 0.367741 8.21895 0.367741 7.82843 0.758265L5 3.58669L2.17157 0.758266C1.78105 0.367741 1.14788 0.367741 0.757359 0.758266C0.366835 1.14879 0.366835 1.78195 0.757359 2.17248L3.58579 5.00091L0.757359 7.82933C0.366835 8.21986 0.366835 8.85302 0.757359 9.24355C1.14788 9.63407 1.78105 9.63407 2.17157 9.24355L5 6.41512L7.82843 9.24355C8.21895 9.63407 8.85212 9.63407 9.24264 9.24355C9.63316 8.85302 9.63317 8.21986 9.24264 7.82933L6.41421 5.00091L9.24264 2.17248C9.63316 1.78195 9.63316 1.14879 9.24264 0.758266Z" fill="black" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="modal-body">
+                    <h3>Paint A Pot</h3>
+                    <p>Please fill out the following information for your reservation.</p>
+                    <form>
+                        <div class="input-container">
+                            <label>First name<sup>*</sup></label>
+                            <input type="text" name="first-name">
+                        </div>
+                        <div class="input-container">
+                            <label>Last name<sup>*</sup></label>
+                            <input type="text" name="last-name">
+                        </div>
+                        <div class="input-container">
+                            <label>Email address<sup>*</sup></label>
+                            <input type="text" name="email-address">
+                        </div>
+                        <div class="input-container">
+                            <label>Phone number<sup>*</sup></label>
+                            <input type="text" name="phone number">
+                        </div>
+                        <div class="input-container">
+                            <label>Number of people<sup>*</sup></label>
+                            <input type="text" name="number-of-people">
+                        </div>
+                    </form>
+                    <button class="continue-btn" onclick="goToModal(3);">Proceed to payments</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 <script>
+    function goToModal(step) {
+        $('.modal.paint-a-pot').removeClass("showing");
+        setTimeout(function() {
+            $('.modal.paint-a-pot[data-step="' + step + '"]').addClass("showing");
+        }, 300);
+    }
+
     $("#cal").flatpickr({
         inline: true,
         minDate: "today",
@@ -157,12 +218,13 @@
     });
 
     $(".enquiry-btn").on("click", function() {
-        $(".modal.paint-a-pot").addClass("showing");
+        $('.modal.paint-a-pot[data-step="1"]').addClass("showing");
     });
 
     $(".time-slot button").on("click", function() {
         $(".time-slot button").removeClass("selected");
         $(this).addClass("selected");
+        goToModal(2);
     });
 </script>
 

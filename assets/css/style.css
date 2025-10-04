@@ -1028,19 +1028,46 @@ html:has(.modal.showing) {
 }
 
 .modal-options {
+    width          : 100%;
+    padding        : 12px;
     position       : absolute;
-    right          : 24px;
     line-height    : 0.5;
     font-size      : 54px;
-    top            : 24px;
     display        : flex;
     align-items    : center;
     justify-content: space-between;
     z-index        : 10;
 }
 
+.modal-back {
+    font-size     : 14px;
+    line-height   : 24px;
+    letter-spacing: 0;
+    display       : flex;
+    align-items   : center;
+    cursor        : pointer;
+}
+
+.modal-back:hover {
+    text-decoration: underline;
+}
+
+.modal-back svg {
+    width: 24px;
+}
+
 .modal-close {
-    cursor: pointer;
+    cursor         : pointer;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin-left    : auto;
+}
+
+.modal-close,
+.modal-close svg {
+    height: 12px;
+    width : 12px;
 }
 
 .modal-body {
@@ -1058,6 +1085,13 @@ html:has(.modal.showing) {
 
 .modal.paint-a-pot .modal-content {
     border-radius: 0;
+    border       : none;
+    padding      : 0;
+    width        : 860px;
+}
+
+.modal.paint-a-pot .modal-body {
+    text-align: center;
 }
 
 .modal.paint-a-pot .modal-body h3 {
@@ -1068,17 +1102,10 @@ html:has(.modal.showing) {
     margin        : 0 0 12px;
 }
 
-.modal.paint-a-pot[data-step="1"] .modal-content {
-    border : none;
-    padding: 0;
-    width  : auto;
-}
-
 .modal.paint-a-pot[data-step="1"] .modal-body {
-    padding   : 0;
-    display   : flex;
-    text-align: center;
-    height    : 550px;
+    padding: 0;
+    display: flex;
+    height : 550px;
 }
 
 .modal.paint-a-pot[data-step="1"] .modal-body div.left {
@@ -1093,7 +1120,7 @@ html:has(.modal.showing) {
 
 .modal.paint-a-pot[data-step="1"] .modal-body div.right {
     background    : var(--grey-marg-hunt);
-    width         : 500px;
+    width         : 100%;
     padding       : 24px 12px;
     color         : var(--white);
     display       : flex;
@@ -1105,6 +1132,39 @@ html:has(.modal.showing) {
     line-height   : 28px;
     letter-spacing: 0;
     margin        : 0 0 24px;
+}
+
+.modal.paint-a-pot[data-step="2"] .modal-body>p {
+    font-size  : 14px;
+    line-height: 24px;
+    margin     : 0 0 24px;
+}
+
+.modal.paint-a-pot[data-step="2"] .modal-body>form {
+    display  : flex;
+    flex-wrap: wrap;
+    margin   : 0 64px;
+    gap      : 12px 24px;
+}
+
+.modal.paint-a-pot[data-step="2"] .modal-body>form .input-container {
+    width: calc(50% - 12px);
+}
+
+.modal.paint-a-pot[data-step="2"] .modal-body>form .input-container label {
+    font-size  : 12px;
+    line-height: 22px;
+}
+
+.modal.paint-a-pot[data-step="2"] .modal-body>form .input-container input {
+    background   : var(--white);
+    border       : solid 1px var(--black);
+    border-radius: 16px;
+    height       : 56px;
+}
+
+.modal.paint-a-pot[data-step="2"] .modal-body .continue-btn {
+    margin: 64px auto 0;
 }
 
 #pap-time-slots {
@@ -1152,7 +1212,7 @@ html:has(.modal.showing) {
     margin-bottom : 24px;
 }
 
-.modal.paint-a-pot[data-step="1"] .modal-body div.right>a.continue-btn {
+.modal.paint-a-pot .modal-body .continue-btn {
     max-width       : 290px;
     background-color: var(--primary);
     margin          : auto;
@@ -1986,12 +2046,12 @@ html:has(.modal.showing) {
 }
 
 .input-container {
-    display      : flex;
-    align-items  : center;
-    gap          : 12px;
-    width        : 100%;
-    position     : relative;
-    margin-bottom: 16px;
+    display       : flex;
+    gap           : 4px;
+    width         : 100%;
+    position      : relative;
+    flex-direction: column;
+    text-align    : left;
 }
 
 input.form-error {
