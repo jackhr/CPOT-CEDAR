@@ -65,6 +65,10 @@ section {
     background-color: var(--white);
 }
 
+section.header {
+    position: relative;
+}
+
 section div.inner {
     display        : flex;
     align-items    : center;
@@ -75,9 +79,9 @@ section div.inner {
 section.header div.inner {
     height        : 500px;
     flex-direction: column;
-    background    : var(--primary);
     color         : var(--white);
     gap           : 24px;
+    position      : relative;
 }
 
 section.header div.inner h1 {
@@ -371,11 +375,11 @@ section#index-header div.inner>div.right {
     height  : 100%;
     left    : 0;
     top     : 0;
-    z-index : 1;
     overflow: hidden;
 }
 
 .carousel-cell {
+    width          : 100%;
     height         : 100%;
     display        : flex;
     justify-content: flex-end;
@@ -387,8 +391,8 @@ section#index-header div.inner>div.right {
     object-fit: cover;
 }
 
-.carousel-cell img.right {
-    object-position: right;
+.carousel-cell img.top {
+    object-position: top;
 }
 
 #landing-title-container {
@@ -2242,11 +2246,7 @@ body#sconces section.catalogue-section div.inner h1 {
     margin     : 0 0 88px;
 }
 
-body#sconces-shop section.header h1,
-body#portfolio section.header h1,
-body#about section.header h1,
-body#shop section.header h1,
-body#contact section.header h1 {
+body#paint-a-pot section.header h1 {
     font-weight: 600;
     font-size  : 88px;
     color      : var(--primary);
@@ -2265,11 +2265,7 @@ body#contact section.header p {
     color : var(--white);
 }
 
-body#sconces-shop section.header p,
-body#about section.header p,
-body#portfolio section.header p,
-body#shop section.header p,
-body#contact section.header p {
+body#paint-a-pot section.header p {
     text-shadow: 1px 1px 1px #000c, 1px 1px 1px #000c, 1px 1px 1px #000c, 1px 1px 24px #000c, 1px 1px 24px #000c;
     font-weight: 600;
 }

@@ -4,6 +4,23 @@
     <?php require_once __DIR__ . '/../includes/nav.php'; ?>
 
     <section class="header">
+        <div class="carousel">
+            <div class="carousel-cell">
+                <img srcset="/assets/images/heros/paint-a-pot/2-mugs.jpg 768w, /assets/images/heros/paint-a-pot/2-mugs.jpg" src="" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img srcset="/assets/images/heros/paint-a-pot/bowl-being-painted-1.jpg 768w, /assets/images/heros/paint-a-pot/bowl-being-painted-1.jpg" src="" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img srcset="/assets/images/heros/paint-a-pot/bowl-being-painted-2.jpg 768w, /assets/images/heros/paint-a-pot/bowl-being-painted-2.jpg" src="" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img srcset="/assets/images/heros/paint-a-pot/plate-being-painted.jpg 768w, /assets/images/heros/paint-a-pot/plate-being-painted.jpg" src="" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img class="top" srcset="/assets/images/heros/paint-a-pot/statue-being-painted.jpg 768w, /assets/images/heros/paint-a-pot/statue-being-painted.jpg" src="" alt="">
+            </div>
+        </div>
         <div class="inner">
             <h1>Paint A Pot</h1>
             <p>Come to our studio, pick a pre-fired pot, and let your creativity flow! Pay once, paint your masterpiece, and enjoy a fun, relaxing experience for everyone.</p>

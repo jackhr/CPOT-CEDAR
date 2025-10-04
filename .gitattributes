@@ -1,5 +1,10 @@
 assets/icons/facebook.png filter=lfs diff=lfs merge=lfs -text
 assets/icons/right-arrow.svg filter=lfs diff=lfs merge=lfs -text
+assets/images/heros/paint-a-pot/2-mugs.png filter=lfs diff=lfs merge=lfs -text
+assets/images/heros/paint-a-pot/bowl-being-painted-1.png filter=lfs diff=lfs merge=lfs -text
+assets/images/heros/paint-a-pot/bowl-being-painted-2.png filter=lfs diff=lfs merge=lfs -text
+assets/images/heros/paint-a-pot/plate-being-painted.png filter=lfs diff=lfs merge=lfs -text
+assets/images/heros/paint-a-pot/statue-being-painted.png filter=lfs diff=lfs merge=lfs -text
 assets/images/logos/logo-black.png filter=lfs diff=lfs merge=lfs -text
 assets/images/logos/logo-icon-only.png filter=lfs diff=lfs merge=lfs -text
 assets/images/logos/logo-primary.png filter=lfs diff=lfs merge=lfs -text

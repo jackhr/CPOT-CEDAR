@@ -1,5 +1,21 @@
 $(document).ready(function () {
 
+    $(".carousel").flickity({
+        fade: true,
+        wrapAround: true,
+        draggable: false,
+        autoPlay: 5000,
+        lazyLoad: 1,
+        imagesLoaded: true, // re-positions cells once their images have loaded.
+        cellSelector: '.carousel-cell',
+        cellAlign: "center",
+        cover: true,
+        prevNextButtons: false,
+        pageDots: false,
+        fullscreen: false,
+        pauseAutoPlayOnHover: false
+    });
+
     $(".modal-close").on("click", function () {
         $(this).closest(".modal").removeClass('showing');
     });

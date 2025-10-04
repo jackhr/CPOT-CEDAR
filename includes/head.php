@@ -25,6 +25,8 @@
     <!-- BEGIN PLUGINS -->
 
     <!-- BEGIN PLUGINS CSS -->
+    <link rel="stylesheet" href="/assets/js/Flickity/css/flickity.min.css" media="screen">
+    <link rel="stylesheet" href="/assets/js/Flickity/css/flickity-fade.css" media="screen">
     <link rel="stylesheet" href="/assets/js/sweetalert2/styles/sweetalert2.min.css" media="screen">
     <link rel="stylesheet" href="/assets/js/flatpickr/styles/flatpickr.min.css" media="screen">
     <!-- END PLUGINS CSS -->
@@ -32,6 +34,9 @@
     <!-- BEGIN PLUGINS JS -->
     <script src="/assets/js/jquery/jquery-3.7.1.min.js"></script>
     <script src="/assets/js/hongymagic-jQuery.serializeObject/dist/jquery.serializeObject.min.js"></script>
+    <script src="/assets/js/Flickity/js/flickity.pkgd.min.js"></script>
+    <script src="/assets/js/Flickity/js/flickity-fade.js"></script>
+    <script src="/assets/js/Flickity/js/flickity-imagesloaded.js"></script>
     <script src="/assets/js/sweetalert2/js/sweetalert2.all.min.js"></script>
     <script src="/assets/js/flatpickr/js/flatpickr.v4.6.13.min.js"></script>
     <!-- END PLUGINS JS -->
