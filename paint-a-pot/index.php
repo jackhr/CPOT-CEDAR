@@ -6,19 +6,19 @@
     <section class="header">
         <div class="carousel">
             <div class="carousel-cell">
-                <img srcset="/assets/images/heros/paint-a-pot/2-mugs.jpg 768w, /assets/images/heros/paint-a-pot/2-mugs.jpg" src="" alt="">
+                <img srcset="/assets/images/heros/paint-a-pot/2-mugs.jpg 768w, /assets/images/heros/paint-a-pot/2-mugs.jpg" src="" alt="2 Mugs">
             </div>
             <div class="carousel-cell">
-                <img srcset="/assets/images/heros/paint-a-pot/bowl-being-painted-1.jpg 768w, /assets/images/heros/paint-a-pot/bowl-being-painted-1.jpg" src="" alt="">
+                <img srcset="/assets/images/heros/paint-a-pot/bowl-being-painted-1.jpg 768w, /assets/images/heros/paint-a-pot/bowl-being-painted-1.jpg" src="" alt="Bowl Being Painted 1">
             </div>
             <div class="carousel-cell">
-                <img srcset="/assets/images/heros/paint-a-pot/bowl-being-painted-2.jpg 768w, /assets/images/heros/paint-a-pot/bowl-being-painted-2.jpg" src="" alt="">
+                <img srcset="/assets/images/heros/paint-a-pot/bowl-being-painted-2.jpg 768w, /assets/images/heros/paint-a-pot/bowl-being-painted-2.jpg" src="" alt="Bowl Being Painted 2">
             </div>
             <div class="carousel-cell">
-                <img srcset="/assets/images/heros/paint-a-pot/plate-being-painted.jpg 768w, /assets/images/heros/paint-a-pot/plate-being-painted.jpg" src="" alt="">
+                <img srcset="/assets/images/heros/paint-a-pot/plate-being-painted.jpg 768w, /assets/images/heros/paint-a-pot/plate-being-painted.jpg" src="" alt="Plate Being Painted">
             </div>
             <div class="carousel-cell">
-                <img class="top" srcset="/assets/images/heros/paint-a-pot/statue-being-painted.jpg 768w, /assets/images/heros/paint-a-pot/statue-being-painted.jpg" src="" alt="">
+                <img class="top" srcset="/assets/images/heros/paint-a-pot/statue-being-painted.jpg 768w, /assets/images/heros/paint-a-pot/statue-being-painted.jpg" src="" alt="Statue Being Painted">
             </div>
         </div>
         <div class="inner">
@@ -83,6 +83,31 @@
                 <div>
                     <img src="/assets/images/paint-a-pot/steps/step-6.jpeg" alt="">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-much-is-it img-text-combo">
+        <div class="inner img-text-combo">
+            <div class="left">
+                <h2>How Much Is It?</h2>
+                <p>A “studio fee” of US$10 is charged per person painting (not per item decorated).The blank pots vary in scale and range in price from US$10 to US$150. The final cost will be the sum of the items painted plus the studio fee, this must be settled at the end of the session.</p>
+            </div>
+            <div class="right">
+                <img src="/assets/images/paint-a-pot/bird-vase.jpg" alt="Bird Vase">
+            </div>
+        </div>
+    </section>
+
+    <section class="private-groups">
+        <div class="inner img-text-combo flipped">
+            <div class="left">
+                <h2>Private Groups</h2>
+                <p>We welcome private groups of no fewer than 8 persons. Individual dates can be negotiated according to availability. As hinted folks are quite welcome to bring light refreshments (nibbles) with them.</p>
+                <button class="enquiry-btn">Reserve Your Spot</button>
+            </div>
+            <div class="right">
+                <img src="/assets/images/paint-a-pot/paint-a-pot-group.jpg" alt="Paint A Pot Group">
             </div>
         </div>
     </section>

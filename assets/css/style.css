@@ -76,6 +76,46 @@ section div.inner {
     padding        : var(--general-padding);
 }
 
+section div.inner.img-text-combo {
+    width    : 100%;
+    max-width: var(--max-width);
+    margin   : auto;
+    gap      : 48px;
+}
+
+section div.inner.img-text-combo>div {
+    width: 100%;
+}
+
+section div.inner.img-text-combo>div.left h2 {
+    font-size  : 36px;
+    margin     : 0 0 24px;
+    font-weight: 400;
+    color      : var(--primary);
+}
+
+section div.inner.img-text-combo>div.left p {
+    font-size  : 18px;
+    line-height: 1.67;
+    margin     : 0;
+}
+
+section div.inner.img-text-combo>div.left button {
+    margin-top: 24px;
+    background: var(--primary);
+}
+
+section div.inner.img-text-combo>div.right img {
+    width     : 100%;
+    height    : auto;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+section div.inner.img-text-combo.flipped {
+    flex-direction: row-reverse;
+}
+
 section.header div.inner {
     height        : 500px;
     flex-direction: column;
@@ -95,6 +135,10 @@ section.header div.inner p {
     text-align: center;
     font-size : 20px;
     margin    : 0 0 auto;
+}
+
+img {
+    border-radius: 2px;
 }
 
 a {
@@ -505,6 +549,10 @@ section.catalogue-section div.inner {
     margin   : auto;
 }
 
+#steps {
+    padding-bottom: 120px;
+}
+
 #steps div.inner {
     display       : flex;
     flex-direction: column;
@@ -565,10 +613,13 @@ section.catalogue-section div.inner {
 }
 
 #steps div.step div:last-child img {
-    width        : 100%;
-    height       : auto;
-    box-shadow   : 0 0 10px 0 rgba(var(--black-rgb-vals), 0.3);
-    border-radius: 2px;
+    width     : 100%;
+    height    : auto;
+    box-shadow: 0 0 10px 0 rgba(var(--black-rgb-vals), 0.3);
+}
+
+section.private-groups {
+    padding-bottom: 120px;
 }
 
 .gallery {
